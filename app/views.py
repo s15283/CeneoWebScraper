@@ -1,5 +1,6 @@
 import os
 import json
+import requests
 from datetime import datetime
 from app import app
 from flask import render_template, redirect, url_for, request, send_from_directory
@@ -11,6 +12,8 @@ def index():
 @app.route('/extract', methods=['post'])
 def extract_data():
     product_id = request.form.get('product_id')
+    url = f"https://www.ceneo.pl/{product_id}#tab=reviews"
+    response = requests.get(url)
     return redirect(url_for('product', product_id=product_id))
 
 @app.route('/extract', methods=['get'])
