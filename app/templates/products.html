@@ -30,7 +30,11 @@ Lista Produktów
                     </p>
                     <div class="d-flex w-100 justify-content-between">
                         <a href="{{ url_for('product', product_id=product.product_id) }}" class="btn btn-primary btn-sm w-auto fs-6 d-flex align-items-center justify-content-center text-center">Zobacz szczegóły</a>
-                        <a href="{{ url_for('download_json', product_id=product.product_id) }}" class="btn btn-secondary btn-sm ms-2 fs-6">Pobierz JSON</a>
+                        <a href="{{ url_for('download_json', product_id=product.product_id) }}"
+                        class="btn btn-secondary btn-sm ms-2 fs-6 d-flex align-items-center">
+                         <img src="{{ url_for('static', filename='icons/download_icon.png') }}" alt="JSON" width="20" height="20" class="me-2">
+                         Pobierz JSON
+                     </a>
                     </div>
                 </div>
             </div>

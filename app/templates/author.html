@@ -5,10 +5,16 @@ O Autorze
 {% block content %}
 <div class="container my-5">
     <div class="row">
-        <div class="col-md-12 text-center">
-            <p class="lead text-dark">Oskar Baran - student Informatyki Ekonomicznej na ANS w Nowym Targu</p>
+        <div class="col-md-12 d-flex align-items-center">
+            <div class="me-4">
+                <img src="{{ url_for('static', filename='uploads/author_photo.png') }}" alt="autor" class="img-fluid" style="width: 180px; height: auto;">
+            </div>
+            <p class="lead text-dark">
+                <strong>Oskar Baran</strong> - student Informatyki Ekonomicznej na ANS w Nowym Targu
+            </p>
         </div>
     </div>
+    <br>
     <div class="row my-4">
         <div class="col-md-12">
             <h2 class="h3 text-dark">Doświadczenie i projekty</h2>
