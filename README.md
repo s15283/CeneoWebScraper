@@ -35,7 +35,6 @@ Głównym celem CeneoWebScraper jest umożliwienie użytkownikowi:
 |----------------|--------------|
 | **Flask**      | Tworzenie aplikacji webowej i routing |
 | **Requests**   | Pobieranie stron internetowych z serwisu Ceneo |
-| **BeautifulSoup** | Parsowanie HTML i ekstrakcja danych |
 | **Bootstrap**  | Stylowanie i responsywny interfejs użytkownika |
 | **Jinja2**     | Szablony HTML generowane dynamicznie |
 
